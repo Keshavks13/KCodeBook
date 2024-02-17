@@ -1,0 +1,212 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+.banner{ 
+  background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(banner.jpg);
+  width:100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navbar{
+  width:100%;
+  margin:auto;
+  padding:35px 0;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width:120px;
+  cursor:pointer;
+}
+.navbar img{
+  width:280px;
+} 
+.navbar ul li{
+  list-style:none;
+  display:inline-block;
+  margin:0 20px;
+  position:relative;
+}
+.navbar ul li a {
+  text-decoration:none;
+  color:white;
+  text-transform: uppercase;
+}
+.navbar ul  li::after{
+  content:'';
+  height:3px;
+  width:0%;
+  background:#009688;
+ position:absolute;
+  left:0;
+  bottom:-10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width:100%;
+}
+.content{
+  width:100%;
+  position:absolute;
+  top:50%;
+  /* transform:translateY(-90%); */
+  text-align:center;
+  color:white;
+}
+.content h2{
+  font-size: 70px;
+  /* margin-right:300px; */
+  /* margin-down: 300px; */
+  /* margin-top:0px; */
+}
+.content p{
+  font-weight:100;
+  line-height:25px;
+  color:skyblue;
+  margin-right:20px;
+}
+.content button{
+  width:200px;
+  padding:15px;
+  text-align:center;
+  border-radius:25px;
+  font-weight:bold;
+  border:2px solid skyblue;
+  margin-right: 320px;
+  margin-top: 20px;
+  background:transparent;
+  color:white;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden; 
+  transition:2s;
+}
+.content button:hover{
+  width:200px;
+  padding:15px;
+  text-align:center;
+  border-radius:25px;
+  font-weight:bold;
+  border:2px solid deepskyblue;
+  margin-right: 320px;
+  margin-top: 20px;
+  background:black;
+  color:white;
+  
+  /* position:relative;
+  overflow:hidden;  */
+}
+.content button a{
+  text-decoration: none;
+  color:white;
+  position: relative;
+  
+}
+.content button a:hover{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;r
+  } 
+
+  /* Your existing styles for desktop */
+
+@media only screen and (max-width: 600px) {
+      * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(banner.jpg);
+  width: 100%;
+  height: 100vh; /* Adjust height for smaller screens */
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 15px 0; /* Adjust padding for smaller screens */
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px; /* Adjust width for smaller screens */
+  cursor: pointer;
+}
+
+.navbar img {
+  width: 120px; /* Adjust width for smaller screens */
+}
+
+.navbar ul li {
+  list-style: none;
+  display: block; /* Display list items vertically on small screens */
+  margin: 10px 0; /* Adjust margin for smaller screens */
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust bottom position for smaller screens */
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;}
+
+
+.content {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.content h2 {
+  font-size: 30px; /* Adjust font size for smaller screens */
+  margin: 20px 0; /* Adjust margin for smaller screens */
+  color: white; /* Add text color for visibility */
+}
+
+.content p {
+  font-weight: 100;
+  line-height: 20px; /* Adjust line height for smaller screens */
+  color: skyblue;
+  margin: 10px 0; /* Adjust margin for smaller screens */
+}
+
+.content button {
+  width: 150px; /* Adjust width for smaller screens */
+  padding: 10px; /* Adjust padding for smaller screens */
+  margin: 10px 0; /* Adjust margin for smaller screens */
+}
+ .content button a:hover{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+  } 
+
+/* Your existing styles for desktop */
+    
